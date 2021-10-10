@@ -41,7 +41,6 @@ nav ul {
   position: absolute;
   top: 20px;
   left: 45%;
-  right: 45%;
   background: #F0F1F5;
   padding: 20px;
   width: 160px;
@@ -264,4 +263,71 @@ h5 {
   flex-direction: row;
   justify-content: flex-start;
   margin-bottom: 80px !important;
+}
+
+#loginSections {
+  margin: auto;
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+
+#loginNames {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: auto;
+  padding-top: 100px;
+  max-width: 500px;
+  border-bottom: 1px solid #AB785B;
+  margin-bottom: 30px;
+}
+
+#loginNames h4{
+  padding: 20px 50px;
+  border-radius: 10px 10px 0 0;
+}
+
+#loginTabs {
+  margin: auto;
+  padding-bottom: 100px;
+  max-width: 400px;
+  height: 500px;
+}
+
+#loginTabs input {
+  width: 300px;
+  height: 30px;
+  margin: 10px;
+  border: 1px solid #AB785B;
+  border-radius: 5px;
+  color: #804F30;
+}
+
+#login {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 0 50px;
+}
+
+#signup {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 0 50px;
+}
+
+#signup h4 {
+  padding: 10px;
+  border-left: 1px solid #804F30;
+}
+
+#loginTabs button {
+  margin: auto;
+  margin-top: 30px;
 }
