@@ -71,6 +71,10 @@ header nav a:hover {
   transition-duration: 0.3s;
 }
 
+footer {
+  padding: 20px;
+}
+
 #content {
   display: flex;
   flex-direction: column;
@@ -109,19 +113,36 @@ h2 {
 
 h3 {
   margin: 20px;
-  font-size: 0.75em;
+  font-size: 0.8em;
 }
 
 .banner {
   margin-bottom: 30px;
 }
 
-footer p {
-  margin-top: 50px;
+footer {
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
+  text-align: left;
+  margin-top: 50px;
+  background-color: #F0F1F5;
+}
+
+footer div {
+  margin: 20px;
+}
+
+footer p {
   font-size: 0.75em;
+  font-weight: lighter;
+  margin-top: 10px;
+  line-height: 1.2em;
+}
+
+footer h3 {
+  margin: 0px;
 }
 
 .invisible {
@@ -215,4 +236,32 @@ label {
 h5 {
   margin: 20px 0;
   font-size: 1.2em;
+}
+
+#aboutPage {
+  padding-top: 100px;
+  display: block;
+  max-width: 1000px;
+  margin: auto;
+}
+
+#aboutPage div {
+  margin: 20px 0;
+}
+
+#aboutPage h1 {
+  margin-bottom: 30px;
+}
+
+#aboutPage img {
+  max-width: 300px;
+  height: auto;
+  margin: 0 50px;
+}
+
+#about, #location, #contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 80px !important;
 }
