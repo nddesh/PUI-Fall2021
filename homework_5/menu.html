@@ -19,7 +19,7 @@
         <li><a href="about.html">About</a></li>
         <li></li>
         <li><a href="login.html">Login</a></li>
-        <li><a href="cart.html">Cart</a></li>
+        <li><a href="cart.html">Cart</a><p id="cartItems"></p></li>
       </ul>
     </nav>
     <div id="logo">
@@ -46,15 +46,15 @@
           <h5>Choose</h5>
           <div id="selections">
             <label for="glaze">Glaze</label>
-            <select id="glaze" name="glaze">
-              <option value="None">Original</option>
+            <select id="glaze" name="glaze" onchange="dropdown1(this.value)">
+              <option value="Original">Original</option>
               <option value="Sugar-milk">Sugar-milk</option>
               <option value="Vanilla-milk">Vanilla-milk</option>
               <option value="Double-chocolate">Double-chocolate</option>
             </select>
   
             <label for="quant">Quantity</label>
-            <select id="quant" name="quant">
+            <select id="quant" name="quant" onchange="dropdown2(this.value)">
               <option value="1">1</option>
               <option value="3">3</option>
               <option value="6">6</option>
@@ -64,13 +64,13 @@
         </div>
         <div id="right">
           <h4>Original</h4>
-          <h2>$1.50</h2>
+          <h2 id="ogPrice">$1.50</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non maecenas amet varius dictum consequat nibh pretium. Sit velit porttitor enim augue vulputate.</p>
           <div id="allergens">
             <a>Ingredients</a>
             <a>Allergens</a>
           </div>
-          <button>Add to Cart</button>
+          <button id="ogAdd">Add to Cart</button>
         </div>
       </div>
       
@@ -88,7 +88,7 @@
             </select>
   
             <label for="quant">Quantity</label>
-            <select id="quant" name="quant">
+            <select id="quant" name="quant" onchange="dropdown2(this.value)">
               <option value="1">1</option>
               <option value="3">3</option>
               <option value="6">6</option>
@@ -98,13 +98,13 @@
         </div>
         <div id="right">
           <h4>Blackberry</h4>
-          <h2>$2.00</h2>
+          <h2 id="blPrice">$2.00</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non maecenas amet varius dictum consequat nibh pretium. Sit velit porttitor enim augue vulputate.</p>
           <div id="allergens">
             <a>Ingredients</a>
             <a>Allergens</a>
           </div>
-          <button>Add to Cart</button>
+          <button id="blAdd">Add to Cart</button>
         </div>
       </div>
       
@@ -122,7 +122,7 @@
             </select>
   
             <label for="quant">Quantity</label>
-            <select id="quant" name="quant">
+            <select id="quant" name="quant" onchange="dropdown2(this.value)">
               <option value="1">1</option>
               <option value="3">3</option>
               <option value="6">6</option>
@@ -132,13 +132,13 @@
         </div>
         <div id="right">
           <h4>Walnut</h4>
-          <h2>$2.00</h2>
+          <h2 id="wlPrice">$2.00</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non maecenas amet varius dictum consequat nibh pretium. Sit velit porttitor enim augue vulputate.</p>
           <div id="allergens">
             <a>Ingredients</a>
             <a>Allergens</a>
           </div>
-          <button>Add to Cart</button>
+          <button id="wlAdd">Add to Cart</button>
         </div>
       </div>
       
@@ -156,7 +156,7 @@
             </select>
   
             <label for="quant">Quantity</label>
-            <select id="quant" name="quant">
+            <select id="quant" name="quant" onchange="dropdown2(this.value)">
               <option value="1">1</option>
               <option value="3">3</option>
               <option value="6">6</option>
@@ -166,13 +166,13 @@
         </div>
         <div id="right">
           <h4>Original (Gluten-Free)</h4>
-          <h2>$1.50</h2>
+          <h2 id="ogVPrice">$1.50</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non maecenas amet varius dictum consequat nibh pretium. Sit velit porttitor enim augue vulputate.</p>
           <div id="allergens">
             <a>Ingredients</a>
             <a>Allergens</a>
           </div>
-          <button>Add to Cart</button>
+          <button id="ogVAdd">Add to Cart</button>
         </div>
       </div>
 
@@ -190,7 +190,7 @@
             </select>
   
             <label for="quant">Quantity</label>
-            <select id="quant" name="quant">
+            <select id="quant" name="quant" onchange="dropdown2(this.value)">
               <option value="1">1</option>
               <option value="3">3</option>
               <option value="6">6</option>
@@ -200,13 +200,13 @@
         </div>
         <div id="right">
           <h4>Pumpkin Spice</h4>
-          <h2>$2.50</h2>
+          <h2 id="psPrice">$2.50</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non maecenas amet varius dictum consequat nibh pretium. Sit velit porttitor enim augue vulputate.</p>
           <div id="allergens">
             <a>Ingredients</a>
             <a>Allergens</a>
           </div>
-          <button>Add to Cart</button>
+          <button id="psAdd">Add to Cart</button>
         </div>
       </div>
 
@@ -224,7 +224,7 @@
             </select>
   
             <label for="quant">Quantity</label>
-            <select id="quant" name="quant">
+            <select id="quant" name="quant" onchange="dropdown2(this.value)">
               <option value="1">1</option>
               <option value="3">3</option>
               <option value="6">6</option>
@@ -234,13 +234,13 @@
         </div>
         <div id="right">
           <h4>Caramel Pecan</h4>
-          <h2>$2.50</h2>
+          <h2 id="cpPrice">$2.50</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non maecenas amet varius dictum consequat nibh pretium. Sit velit porttitor enim augue vulputate.</p>
           <div id="allergens">
             <a>Ingredients</a>
             <a>Allergens</a>
           </div>
-          <button>Add to Cart</button>
+          <button id="cpAdd">Add to Cart</button>
         </div>
       </div>
     </section>
@@ -259,5 +259,6 @@
   </footer>
 
   <script src="scriptMenu.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>

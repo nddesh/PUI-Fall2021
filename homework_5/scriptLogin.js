@@ -1,3 +1,5 @@
+document.getElementById('cartItems').innerHTML = localStorage.getItem("cartCounter");
+
 window.onload = function() {
   init();
 }
